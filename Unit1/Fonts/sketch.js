@@ -3,6 +3,7 @@ function setup() {
   createCanvas(500, 500);
   f1 = loadFont("assets/Dancing.ttf");
   f2 = loadFont("assets/zcool.ttf");
+  textAlign(CENTER);
 }
 
 function draw() {
@@ -13,6 +14,6 @@ background("yellow");
 
   textFont(f2)
   textSize(24);
-  text("This class is awesome :)",width/2,160);
+  text("This class is awesome :)",width/2,150);
 
 }
