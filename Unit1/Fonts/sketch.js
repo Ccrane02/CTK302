@@ -1,13 +1,18 @@
-var font1 ;
+var f1,f2 ;
 function setup() {
   createCanvas(500, 500);
-  font1 = loadFont("assets/Dancing.ttf");
+  f1 = loadFont("assets/Dancing.ttf");
+  f2 = loadFont("assets/zcool.ttf");
 }
 
 function draw() {
 background("yellow");
-  textFont(font1);
+  textFont(f1);
   textSize(24);
-  text("hello world",100,100);
+  text("Hello World",100,100);
+
+  textFont(f2)
+  textSize(24);
+  text("This class is awesome :)",width/2,160);
 
 }
