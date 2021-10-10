@@ -15,19 +15,19 @@ function draw() {
 
   switch(numberOfTouches) {
     case 0:
-      image(don,0,550,300,300);
+      image(don,400,400,300,300);
       break ;
 
       case 1:
-      image(leo,900,550,300,300);
+      image(leo,400,400,300,300);
       break ;
 
       case 2:
-      image(raph,300,550,300,300);
+      image(raph,400,400,300,300);
       break ;
 
       case 3:
-    image(mich,600,550,300,300);
+    image(mich,400,400,300,300);
       break ;
 
 
