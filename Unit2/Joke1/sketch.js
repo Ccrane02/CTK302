@@ -22,7 +22,7 @@ function draw() {
 
 function mouseReleased(){
   state++ ;
-  if(state>5){
+  if(state>1){
     state=0;
   }
 
