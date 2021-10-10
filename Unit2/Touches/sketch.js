@@ -2,6 +2,10 @@ let numberOfTouches ;
 
 function setup() {
   createCanvas(400, 400);
+  don = loadImage("assets/don.gif");
+  mich = loadImage("assets/mich.gif");
+  leo = loadImage("assets/leo.gif");
+  raph = loadImage("assets/raph.gif");
 }
 
 function draw() {
@@ -11,22 +15,19 @@ function draw() {
 
   switch(numberOfTouches) {
     case 0:
-      text("no one is touching the screen", 5, 22) ;
+      image(don,0,550,300,300);
       break ;
 
       case 1:
-       text("it's kind of lonely here", 5, 22) ;
-      // put a picture here
+      image(leo,900,550,300,300);
       break ;
 
       case 2:
-      text("two fingers are touching the screen", 5, 22) ;
-            // put a picture here
+      image(raph,300,550,300,300);
       break ;
 
       case 3:
-     text("three are touching the screen", 5, 22) ;
-            // put a picture here
+    image(mich,600,550,300,300);
       break ;
 
 
