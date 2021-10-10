@@ -6,7 +6,7 @@ function setup() {
 function draw() {
 background('grey');
 ellipse(x,100,100,100);
-ellipse(x,200,100,300);
+ellipse(x,100,100,300);
 x=x+5;
 if(x >= 500) {
   x=0;
