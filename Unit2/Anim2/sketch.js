@@ -22,31 +22,18 @@ if(x>800){
 }
 
 function avatar(){
-  // rain man body head when not pressed
- fill('black')
- ellipse(410, 170, 80, 80);
-
- fill('white');
- arc(410, 180, 40, 40, 0, PI + QUARTER_PI, CHORD);
-
-
-
- // rain man body
- fill('black');
- rect(390, 200, 40, 140);
- rect(395, 230, 10, 140);
- rect(413, 230, 10, 140);
-
- // rain man arms
- fill('black');
- line(500, 200, 400, 225);
- fill('black');
- line(300, 200, 400, 225);
-
- fill('white')
- ellipse(395, 150, 10, 10);
-
- fill('white')
- ellipse(425, 150, 10, 10);
-
+  fill(251,169,145);
+      rect(479,511,200,200);
+       fill(189,145,251)
+  rect(479,800, 400, 400);
+       fill(254,254,254);
+      rect(445,488,50,50);
+      fill(254,254,254);
+      rect(523,488,50,50);
+       fill(4,102,255);
+       rect(445,488,25,25);
+      fill(4,102,255);
+      rect(523,488,25,25);
+       fill(255,4,4);
+      rect(480,560,100,50);
 }
