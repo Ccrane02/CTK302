@@ -5,7 +5,7 @@ function setup() {
 
 function draw() {
 background('grey');
-rect(x,100,100,100);
+text("Hello World")
 x=x+5;
 if(x >= 500) {
   x=0;
