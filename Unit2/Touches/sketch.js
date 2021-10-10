@@ -1,5 +1,5 @@
 let numberOfTouches ;
-
+let don,mich,leo,raph;
 function setup() {
   createCanvas(400, 400);
   don = loadImage("assets/don.gif");
