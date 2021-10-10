@@ -39,7 +39,7 @@ function draw() {
       break;
 
     case 3:
-      background("orange");
+      background('orange');
       break;
 
 
@@ -49,16 +49,10 @@ function draw() {
       break;
 
     case 5:
-      background("red");
+      background('red');
       break;
   }
-
-fill('Blue');
-  rect(100,100,100,100);
-
-
 }
-
 function mouseReleased() {
   if ((mouseX > 100) && (mouseX < 200) && (mouseY > 100) && (mouseY < 200)){
 
