@@ -28,7 +28,7 @@ function draw() {
 
 
       case 0:
-image(ocean,0 ,0,2000,750);
+image(ocean,0 ,0,2500,750);
 fill('black');
 textFont(f1);
       textSize(100);
