@@ -6,7 +6,7 @@ let frogPos;
 let timer = 0;
 var f1;
 function setup() {
-  createCanvas(2000, 750);
+  createCanvas(1900, 750);
   ocean = loadImage("assets/Ocean.png");
   shark = loadImage("assets/shark.jpg");
   gold = loadImage("assets/gold.jpg");
@@ -82,12 +82,14 @@ break;
 case 2:
 image(lost, 400, 350,400,400);
 textFont(f1);
+fill('black')
  textSize(100);
  text("YOU LOST", 300, 200);
  break;
 case 3:
 image(win, 400, 350,400,400);
 textFont(f1);
+fill('black')
  textSize(100);
  text("YOU WON", 300, 200,);
 break;
