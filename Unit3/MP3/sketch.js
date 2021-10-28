@@ -6,7 +6,7 @@ let frogPos;
 let timer = 0;
 var f1;
 function setup() {
-  createCanvas(1900, 750);
+  createCanvas(1950, 750);
   ocean = loadImage("assets/Ocean.png");
   shark = loadImage("assets/shark.jpg");
   gold = loadImage("assets/gold.jpg");
