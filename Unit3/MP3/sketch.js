@@ -19,7 +19,7 @@ function setup() {
   for (let i = 0; i < 50; i++) {
     cars.push(new Car());
   }
-  frogPos = createVector(width / 2, height - 50);
+  frogPos = createVector(width / 2, height - 90);
 
 }
 
