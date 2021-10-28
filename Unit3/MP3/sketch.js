@@ -4,7 +4,7 @@ let cars = [];
 let state =0;
 let frogPos;
 let timer = 0;
-let f1
+var f1;
 function setup() {
   createCanvas(2000, 750);
   ocean = loadImage("assets/Ocean.png");
@@ -12,7 +12,7 @@ function setup() {
   gold = loadImage("assets/gold.jpg");
   lost=loadImage("assets/lost.png");
   win=loadImage("assets/win.jpg");
-  f1=loadFont("assets/seaweed.ttf");
+  f1=loadFont("assets/font.ttf");
   // Spawn an object
   // myCar = new Car() ;
 
