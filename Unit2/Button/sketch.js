@@ -2,14 +2,14 @@ let state = 0;
 
 function setup() {
   createCanvas(400, 400);
-  rectMode(CENTER) ;
+  rectMode(CENTER);
 }
 
 function draw() {
 
   background(100);
-  fill(255) ;
-  text(mouseX + ", " + mouseY, 50, 50) ;
+  fill(255);
+  text(mouseX + ", " + mouseY, 50, 50);
 
   switch (state) {
 
@@ -28,14 +28,14 @@ function draw() {
   }
 
   fill('red');
-  rect(width/2, height-75, 100, 50);
+  rect(width / 2, height - 75, 100, 50);
 
 }
 
 function mouseReleased() {
-  if ((mouseX > width/2-50) && (mouseX < width/2+50) && (mouseY > height-75) && (mouseY < height-25)) {
+  if ((mouseX > width / 2 - 50) && (mouseX < width / 2 + 50) && (mouseY > height - 75) && (mouseY < height - 25)) {
 
-  state++;
+    state++;
 
     if (state > 2) state = 0;
   }
