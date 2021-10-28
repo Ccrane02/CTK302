@@ -6,7 +6,7 @@ let frogPos;
 let timer = 0;
 let f1
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(2000, 750);
   ocean = loadImage("assets/Ocean.png");
   shark = loadImage("assets/shark.jpg");
   gold = loadImage("assets/gold.jpg");
@@ -28,7 +28,7 @@ function draw() {
 
 
       case 0:
-image(ocean,0 ,0,2000,900);
+image(ocean,0 ,0,2000,750);
 fill('black');
 textFont(f1);
       textSize(100);
