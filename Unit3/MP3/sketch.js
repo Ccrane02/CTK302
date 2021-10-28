@@ -6,7 +6,7 @@ let frogPos;
 let timer = 0;
 var f1;
 function setup() {
-  createCanvas(1915, 800);
+  createCanvas(1915, 750);
   ocean = loadImage("assets/Ocean.png");
   shark = loadImage("assets/shark.jpg");
   gold = loadImage("assets/gold.jpg");
@@ -19,7 +19,7 @@ function setup() {
   for (let i = 0; i < 50; i++) {
     cars.push(new Car());
   }
-  frogPos = createVector(width / 2, height - 70);
+  frogPos = createVector(width / 2, height - 50);
 
 }
 
