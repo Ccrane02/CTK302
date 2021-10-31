@@ -2,7 +2,7 @@ let cars = [];
 let ocean;
 
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(500,500);
   noStroke();
   ocean = loadImage("assets/Ocean.png");
   // for (let i = 0; i < 20; i++) {
@@ -31,15 +31,17 @@ function draw() {
 class Car {
   constructor() {
     // attributes
-    this.pos = createVector(width / 2, height -10);
-    this.vel = createVector(random(.9, -.9), random(0, -3));
-    this.a = random(200);
+    this.pos = createVector(random(width), random(100));
+    this.vel = createVector(0, random(5));
+   this.cor = color(0, random(50, 100), random(190, 245), random(100));
+     this.size = random(50) ;
   }
 
   // methods
   display() {
-    fill(255, this.a);
-    ellipse(this.pos.x, this.pos.y, 25, 25);
+    fill(this.cor);
+    textSize(this.size) ;
+    text("Under the Sea",this.pos.x, this.pos.y);
   }
   move() {
     this.pos.add(this.vel);
