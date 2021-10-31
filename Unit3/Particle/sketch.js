@@ -31,8 +31,8 @@ function draw() {
 class Car {
   constructor() {
     // attributes
-    this.pos = createVector(width / 2, height - 80);
-    this.vel = createVector(random(-.9, .9), random(-5, -2));
+    this.pos = createVector(width / 2, height -10);
+    this.vel = createVector(random(.9, -.9), random(0, -3));
     this.a = random(200);
   }
 
