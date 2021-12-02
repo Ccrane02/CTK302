@@ -34,9 +34,9 @@ textFont(f1);
       textSize(100);
       text("Press to Start",150,150);
 
-break;
-case 1:
-    timer++;
+      break;
+      case 1:
+          timer++;
     if (timer > 3000) {
       timer = 0;
       state = 2;
