@@ -31,12 +31,12 @@ function setup() {
 
   // load any images you need
   //bunnyImage = loadImage("assets/bunny.jpg");
-  ocean = loadImage("assets/Ocean.png");
+  ocean = loadImage("assets/Ocean.jpg");
   shark = loadImage("assets/shark.png");
   gold = loadImage("assets/gold.png");
-  lost=loadImage("assets/lost.png");
-  win=loadImage("assets/win.jpg");
-  f1=loadFont("assets/font.ttf");
+//  lost=loadImage("assets/lost.png");
+  //win=loadImage("assets/win.jpg");
+//  f1=loadFont("assets/font.ttf");
   imageMode(CENTER);
   rectMode(CENTER);
   noStroke();
@@ -44,7 +44,7 @@ function setup() {
 
 function draw() {
 
-
+  background('#c6f5ff'); // light blue
   image(ocean, width/2, height/2, width, height);
 
   // the map command !!!!
@@ -61,7 +61,7 @@ function draw() {
 
   // draw the FROG
   // image(bunnyImage, 0, 0, 500, 500);
-image(shark, 0, 0, 500, 500);
+image(shark,100,100, 500, 500);
 
   //ellipse(0, 0, 80, 80);
 
