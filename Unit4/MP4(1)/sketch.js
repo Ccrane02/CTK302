@@ -1,10 +1,10 @@
 // let myCar ;
-var beta, gamma; // orientation data
-var x = 0; // acceleration data
-var y = 0;
-var z = 0;
-var xPosition = 0;
-var yPosition = 0;
+let beta, gamma; // orientation data
+let x = 0; // acceleration data
+let y = 0;
+let z = 0;
+let xPosition = 0;
+let yPosition = 0;
 let shark, gold, ocean,lost,win
 let cars = [];
 // let state =0;
@@ -12,7 +12,7 @@ let frogPos;
 // let timer = 0;
 // var f1;
 function setup() {
-  createCanvas(1915, 750);
+  createCanvas(windowWidth, windowHeight);
   alpha = 0;
    beta = 0;
    gamma = 0;
@@ -22,6 +22,7 @@ function setup() {
   lost=loadImage("assets/lost.png");
   win=loadImage("assets/win.jpg");
   f1=loadFont("assets/font.ttf");
+   imageMode(CENTER);
   // Spawn an object
   // myCar = new Car() ;
 
@@ -37,7 +38,7 @@ function draw() {
 
 
       // case 0:
-image(ocean,0 ,0,2000,750);
+image(ocean, width/2, height/2, width, height);
 fill('black');
 textFont(f1);
       textSize(100);
@@ -132,20 +133,30 @@ frogPos.y = yPosition;
   function deviceShaken() {
     // re-spawn cars
     cars = []; // clear the array first
-    for (var i = 0; i < 40; i++) {
+    for (let i = 0; i < 40; i++) {
       cars.push(new Car());
     }
   }
 
+  window.addEventListener('deviceorientation', function(e) {
+    alpha = e.alpha;
+    beta = e.beta;
+    gamma = e.gamma;
+  });
+  window.addEventListener('devicemotion', function(e) {
+  // get accelerometer values
+  x = e.acceleration.x;
+  y = e.acceleration.y;
+  z = e.acceleration.z;
+});
 
-
-  function reset() {
-    car = []; //clear the array
-    for (var i = 0; i < 5; i++) {
-      cars.push(new Car());
-    }
-    timer = 0;
-  }
+  // function reset() {
+  //   car = []; //clear the array
+  //   for (var i = 0; i < 5; i++) {
+  //     cars.push(new Car());
+  //   }
+  //   timer = 0;
+  // }
 
 
 
