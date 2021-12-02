@@ -8,8 +8,8 @@ var f1;
 function setup() {
   createCanvas(1915, 750);
   ocean = loadImage("assets/Ocean.png");
-  shark = loadImage("assets/shark.jpg");
-  gold = loadImage("assets/gold.jpg");
+  shark = loadImage("assets/shark.png");
+  gold = loadImage("assets/gold.png");
   lost=loadImage("assets/lost.png");
   win=loadImage("assets/win.jpg");
   f1=loadFont("assets/font.ttf");
