@@ -29,7 +29,7 @@ function setup() {
   for (let i = 0; i < 30; i++) {
     cars.push(new Car());
   }
-  frogPos = createVector(width / 2, height - 120);
+  frogPos = createVector(width / 2, height - 80);
 
 }
 
@@ -41,10 +41,17 @@ function draw() {
 image(ocean, width/2, height/2, width, height);
 fill('black');
 textFont(f1);
-      textSize(100);
-      text("Eat all the fish",150,150);
+      textSize(36);
+   text("Eat All The Fish", width / 2, 600, windowWidth - 200, windowHeight - 200);
       xPosition = map(gamma, -18, 18, 0, width);
        yPosition = map(beta, 25, 45, 0, height);
+       push();
+         translate(xPosition, yPosition);
+       image(shark,frogPos.x, frogPos.y, 200, 100);
+       // checkForKeys();
+  pop();
+  frogPos.x = xPosition;
+ frogPos.y = yPosition;
 // break;
 // case 1:
     // timer++;
@@ -64,25 +71,19 @@ textFont(f1);
         cars[i].display();
         cars[i].move();
 
-        if (cars[i].pos.dist(frogPos) < 50) {
+        if (cars[i].pos.dist(frogPos) < 30) {
           cars.splice(i, 1);
 
-          if (cars.length == 0) {
-             timer = 0
-             state = 3;
-           }
+          // if (cars.length == 0) {
+          //    timer = 0
+          //    state = 3;
+          //  }
 
         }
 
       }
 
-      push();
-        translate(xPosition, yPosition);
-      image(shark,frogPos.x, frogPos.y, 200, 100);
-      // checkForKeys();
- pop();
- frogPos.x = xPosition;
-frogPos.y = yPosition;
+
     }
 
     // function checkForKeys() {
@@ -133,7 +134,7 @@ frogPos.y = yPosition;
   function deviceShaken() {
     // re-spawn cars
     cars = []; // clear the array first
-    for (let i = 0; i < 40; i++) {
+    for (let i = 0; i < 30; i++) {
       cars.push(new Car());
     }
   }
