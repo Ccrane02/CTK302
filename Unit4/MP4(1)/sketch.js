@@ -5,7 +5,7 @@ var y = 0;
 var z = 0;
 var xPosition = 0;
 var yPosition = 0;
-var shark, gold, ocean,lost,win
+var shark, gold, ocean,f1
 // var bunnyImage;
 var cars = [];
 var frogPos;
@@ -36,7 +36,7 @@ function setup() {
   gold = loadImage("assets/gold.png");
 //  lost=loadImage("assets/lost.png");
   //win=loadImage("assets/win.jpg");
-//  f1=loadFont("assets/font.ttf");
+  f1=loadFont("assets/font.ttf");
   imageMode(CENTER);
   rectMode(CENTER);
   noStroke();
@@ -84,6 +84,7 @@ image(shark,0,0, 100, 00);
   // MORE DECORATIONS - write that pretty ATK type on top.
   fill('black');
   textSize(36);
+  textFont(f1);
   textAlign(CENTER);
   text("Eat All The Fish", width / 2, 600, windowWidth - 200, windowHeight - 200);
 
