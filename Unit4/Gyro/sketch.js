@@ -60,10 +60,10 @@ function draw() {
   // Text that makes CTK type in the background
   fill('white');
   noStroke();
-  textSize(20);
+  textSize(10);
   textAlign(CENTER);
     textFont(f1);
-  text("The best way to spread Christmas cheer is singing loud for all to hear.", width / 2, height / 2);
+    text("The best way to spread Christmas cheer is singing loud for all to hear.", width / 2, height / 2);
 
 }
 
