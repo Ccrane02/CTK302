@@ -6,14 +6,14 @@ let elf;
 let xPosition = 0;
 let yPosition = 0;
 let x = 0, y = 0, z = 0 ; // accelerometer data
-
+var f1;
 
 function setup() {
 
   createCanvas(windowWidth, windowHeight);
 
 
-
+f1 = loadFont("assets/text.ttf")
   elf = loadImage("assets/elf.png");
   imageMode(CENTER);
   rectMode(CENTER);
@@ -60,9 +60,10 @@ function draw() {
   // Text that makes CTK type in the background
   fill('white');
   noStroke();
-  textSize(200);
+  textSize(20);
   textAlign(CENTER);
-  text("This class is pretty cool!", width / 2, height / 2);
+    textFont(f1);
+  text("The best way to spread Christmas cheer is singing loud for all to hear.", width / 2, height / 2);
 
 }
 
